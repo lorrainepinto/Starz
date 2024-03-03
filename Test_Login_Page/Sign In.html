@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<style>
+  body {
+	font-family: Arial, sans-serif;
+	background: url('office-background.jpg') no-repeat center center fixed;
+	background-size: cover;
+  }
+  .login-container {
+	width: 300px;
+	margin: 100px auto;
+	padding: 20px;
+	background: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .login-container h2 {
+	text-align: center;
+	margin-bottom: 20px;
+  }
+  .form-field {
+	margin-bottom: 10px;
+  }
+  .form-field input {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+  }
+  .form-field input[type="checkbox"] {
+	width: auto;
+  }
+  .login-container form {
+	display: flex;
+	flex-direction: column;
+  }
+  .login-container form .action {
+	margin-top: 20px;
+  }
+  .login-container form button {
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	background: #007bff;
+	color: white;
+	cursor: pointer;
+  }
+  .login-container form button:hover {
+	background: #0056b3;
+  }
+  .login-container form .signup {
+	text-align: center;
+	margin-top: 15px;
+  }
+  .login-container form .signup a {
+	text-decoration: none;
+	color: #007bff;
+  }
+</style>
+</head>
+<body>
+
+<div class="login-container">
+  <h2>Sign in</h2>
+  <form>
+	<div class="form-field">
+  	<label for="email">Email</label>
+  	<input type="email" id="email" placeholder="Enter your email">
+	</div>
+	<div class="form-field">
+  	<label for="password">Password</label>
+  	<input type="password" id="password" placeholder="Enter your password">
+	</div>
+	<div class="form-field">
+  	<input type="checkbox" id="remember-me">
+  	<label for="remember-me">Remember me</label>
+	</div>
+	<div class="action">
+  	<button type="submit">Sign In</button>
+	</div>
+	<div class="form-field">
+  	<a href="#">Forgot password?</a>
+	</div>
+	<div class="signup">
+  	<span>Don't have an account?</span>
+  	<a href="#">Sign Up</a>
+	</div>
+  </form>
+</div>
+
+</body>
+</html>
