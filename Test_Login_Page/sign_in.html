@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login Page</title>
+	<link href="/Test_Login_Page/assets/css/sign_in.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+	<div class="login-container">
+		<img src="/Test_Login_Page/assets/icons/v1_logo.svg" alt="Logo" class="logo">
+		<h2 id="sign-in-title">Sign in</h2>
+		<form id="login-form">
+			<div class="form-field">
+				<label for="email">Email</label>
+				<i class="fas fa-envelope"></i>
+				<input type="email" id="email" class="form-control" placeholder="Enter your email">
+			</div>
+			<div class="form-field">
+				<label for="password">Password</label>
+				<i class="fas fa-lock"></i>
+				<input type="password" id="password" class="form-control" placeholder="Enter your password">
+				<i class="fas fa-eye-slash" id="toggle-password" onclick="togglePasswordVisibility()"></i>
+			</div>
+			<div class="form-field">
+				<input type="checkbox" id="remember-me">
+				<label for="remember-me">Remember me</label>
+			</div>
+			<div class="action">
+				<button type="submit" id="sign-in-button" class="btn btn-primary">Sign In</button>
+			</div>
+			<div class="form-field forgot-password">
+				<a href="#" id="forgot-password-link">Forgot password?</a>
+			</div>			
+			<div class="signup">
+				<span>Don't have an account?</span>
+				<a href="#" id="sign-up-link">Sign Up</a>
+			</div>
+		</form>
+	</div>
+	<script src="/Test_Login_Page/assets/js/#"></script>
+</body>
+</html>
