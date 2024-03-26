@@ -1,0 +1,136 @@
+/* Reset and General Styles */
+body {
+    background: url('../images/v1_reception.jpg') no-repeat center fixed;
+    background-size: cover;
+    font-family: 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+/* Form Container */
+.login-container {
+    width: 350px;
+    margin: 250px auto;
+    padding: 30px;
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+    border-radius: 3%;
+}
+
+/* Logo Styles */
+.logo {
+    display: block;
+    margin: 0 auto 20px; 
+    width: 70px; 
+    height: auto; 
+}
+
+/* Sign In Title */
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+/* Form Fields */
+.form-field {
+    position: relative;
+    margin-bottom: 10px;
+    width: calc(100% - 20px);
+}
+
+/* Input Styles */
+.form-field input {
+    width: 90%;
+    padding: 10px;
+    padding-left: 35px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+
+/* Placeholder Font Family */
+.form-field input::placeholder {
+    font-family: 'Gill Sans MT', 'Trebuchet MS', sans-serif !important;
+    /* font-family: 'Font Awesome 5 Free'; */
+}
+
+/* Icons */
+.form-field i {
+    position: absolute;
+    top: 65%;
+    transform: translateY(-50%);
+    color: #aaa;
+    right: 6px;
+}
+
+/* Icon Positioning */
+.form-field i.fa-envelope,
+.form-field i.fa-lock {
+    left: 10px;
+}
+
+.form-field i.fa-eye-slash {
+    right: 5px;
+}
+
+/* Checkbox Styles */
+.form-field input[type="checkbox"] {
+    width: auto;
+}
+
+/* Form Styles */
+.login-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Action Styles */
+.login-container form .action {
+    margin-top: 20px;
+}
+
+/* Button Styles */
+.login-container form button {
+    width: 100%;   
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #565e6d;
+    color: white;
+    cursor: pointer;
+}
+
+.login-container form button:hover {
+    background: #383d47;
+}
+
+/* Sign Up Link Styles */
+.login-container form .signup {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.login-container form .signup a {
+    text-decoration: none;
+    color: #00948f;
+}
+
+.login-container form .signup a:hover {
+    color: #004044; /* Change color on hover */
+}
+
+/* Forgot Password Link Styles */
+.form-field.forgot-password {
+    text-align: left;
+    margin-top: 8px;
+}
+
+.form-field.forgot-password a {
+    text-decoration: none;
+    color: #00948f;
+    font-size: 14px;
+}
+
+.form-field.forgot-password a:hover {
+    color: #004044; 
+}
